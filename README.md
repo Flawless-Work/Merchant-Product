@@ -14,7 +14,7 @@ Author & Contributor List
  
  CP 
  
- Bugs and fixes can be sent to dimparisdimitris@gmail.com 
+ Bugs and fixes can be sent to dimparisdimitris@gmail.com / lazunin.roman@gmail.com
  Reported bugs/fixes will be submitted to correction  
  
  File List 
@@ -95,3 +95,5 @@ A [link](http://example.com).
 > Markdown uses email-style > characters for blockquoting.
 
 Inline <abbr title="Hypertext Markup Language">HTML</abbr> is supported.
+
+Also Hello World 
