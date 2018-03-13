@@ -1,4 +1,4 @@
-Merchant-Product 
+Merchant Product 
 ==========
 
 Licensing Information: READ LICENSE 
