@@ -1,4 +1,5 @@
-Mer - Pro 
+
+Merchant - Product  
 ==========
 
 Licensing Information: READ LICENSE 
