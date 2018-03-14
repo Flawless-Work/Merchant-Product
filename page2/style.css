@@ -1,0 +1,17 @@
+#inputFirstName {
+    margin-top: 100px;
+}
+
+#inputLastName {
+    margin-top: 10px;
+}
+
+#inputAdress {
+    margin-top: 10px;
+}
+
+#continueButton {
+    margin-top: 20px;
+    width: 20px;
+    height: 10px;
+}
