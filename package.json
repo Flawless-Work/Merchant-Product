@@ -1,0 +1,24 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "desc",
+  "main": "server.js",
+  "dependencies": {
+    "string-template": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flawless-Work/Merchant-Product.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Flawless-Work/Merchant-Product/issues"
+  },
+  "homepage": "https://github.com/Flawless-Work/Merchant-Product#readme"
+}
