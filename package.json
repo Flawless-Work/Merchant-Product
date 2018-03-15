@@ -6,10 +6,10 @@
   "dependencies": {
     "string-template": "^1.0.0"
   },
-  "devDependencies": {},
+    "main": "server.js",
   "scripts": {
-    "test": "node server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/Flawless-Work/Merchant-Product/issues"
   },
-  "homepage": "https://github.com/Flawless-Work/Merchant-Product#readme"
+  "homepage": "https://github.com/Flawless-Work/Merchant-Product#readme",
+  "keywords": []
 }
