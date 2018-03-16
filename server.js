@@ -3,10 +3,10 @@ var url = require('url');
 var fs = require('fs');
 var format = require("string-template");
 var configRead
-var port = process.env.PORT || 5000; 
- 
-// Format using an object hash with keys matching [0-9a-zA-Z]+ 
-var content = fs.readFileSync('config.json', 'utf8');    
+var port = process.env.PORT || 5000;
+
+// Format using an object hash with keys matching [0-9a-zA-Z]+
+var content = fs.readFileSync('config.json', 'utf8');
 var contentString = content.toString();
 var configurationObj = JSON.parse(contentString);
 
@@ -15,9 +15,9 @@ function onRequest(req, response) {
         response.end();
         return
     }
-    
+
     var urlParts = url.parse(req.url, true),
-    urlParams = urlParts.query, 
+    urlParams = urlParts.query,
     urlPathname = urlParts.pathname;
     console.log(urlPathname);
     console.log(urlParams);
@@ -25,13 +25,14 @@ function onRequest(req, response) {
         urlPathname = '/index.html'
     }
     response.writeHead(200, {'Content-Type': 'text/html'});
-    
+
+
     fs.readFile(__dirname + urlPathname, function(err, data) {
         if (err){
              console.log(err);
          }
 
-        configRead = format(data.toString(), 
+        configRead = format(data.toString(),
                             Object.assign({}, configurationObj, urlParams));
 
         response.write(configRead);
@@ -39,6 +40,6 @@ function onRequest(req, response) {
     })
 }
 
-http.createServer(onRequest).listen(port, console.log("Hello, listening to port" + port)    );  
 
 
+http.createServer(onRequest).listen(port, console.log("Hello, listening to port" + port)    );
