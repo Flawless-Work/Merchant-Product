@@ -1,6 +1,8 @@
 body {
-  background-color: #268ED2;
+  background-color: {backgroundColor};
 }
+
+
 
 #companyNameBox {
       top: 0;
@@ -8,8 +10,9 @@ body {
       padding: auto;
       overflow: hidden;
       border: none;
-      font: normal 12px/2 Arial Black, Gadget, sans-serif;
-      color: rgba(255,255,255,1);
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 14px;
+      color: {textBrightColor};
       text-indent: 2em;
       -o-text-overflow: clip;
       text-overflow: clip;
@@ -33,12 +36,13 @@ body {
   border-radius: 5px 5px 5px 0px;
      border-bottom-width: 3px;
     display: block;
+    object-fit: cover;
     height: 300px;
     width: 700px;
 }
 
 #productTitle {
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 20px;
@@ -53,11 +57,11 @@ body {
   width: 350px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  color: rgba(255,255,255,1);
+  color: {textBrightColor};
   text-align: center;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  background: #21a7ff;
+  background: {PrimaryColor};
 
 }
 
@@ -68,7 +72,7 @@ body {
     font-size: 15px;
     letter-spacing: 0.1px;
     word-spacing: 2px;
-    color: #FFF;
+    color: {textDarkColor};
     font-weight: 400;
     text-decoration: none;
     font-style: normal;
@@ -81,7 +85,7 @@ body {
 #descTextBox {
   height: auto;
   width: 100%;
-  background: #FAF;
+  background: {SecondaryColor};
 }
 
 #priceBox {
@@ -96,7 +100,7 @@ body {
   text-align: center;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  background: #21a7ff;
+  background: {PrimaryColor};
 }
 
 #productPrice  {
@@ -105,7 +109,7 @@ body {
   font-size: 16px;
   letter-spacing: 1.2px;
   word-spacing: 2px;
-  color: #FFF;
+  color: {textBrightColor};
   font-weight: 400;
   text-decoration: none;
   font-style: normal;
@@ -128,28 +132,30 @@ body {
   font-size: 19px;
   -webkit-border-radius: 5px 0px 5px 0px;
   border-radius: 5px 0px 5px 0px;
-  color: rgba(255,255,255,1);
+  color: {textBrightColor};
   text-align: center;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  background: #21a7ff;
-  -webkit-box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.1);
-  box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.1);
+  background: {PrimaryColor};
   transition-duration: 0.3s;
+  outline: none;
 }
 
 #buyButton:hover {
-  background: #1399f2;
-  font-size: 21px;
+  background: {buttonHoverColor};
+  color: {textDarkColor};
+  font-size: 17px;
   transition-duration: 0.3s;
-  -webkit-box-shadow: inset 0px 0px 19px 0px rgba(255,255,255,0.1);
-  box-shadow: inset 0px 0px 19px 0px rgba(255,255,255,0.1);
+  -webkit-box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.4);
+  box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.4);
 }
 
 #buyButton:active {
-  background: #0e83d1;
-  font-size: 17px;
+  background: {buttonActiveColor};
+    color: {textDarkColor};
+  font-size: 15px;
   transition-duration: 0.1s;
-  -webkit-box-shadow: inset 0px 0px 19px 0px rgba(255,255,255,0.1);
-  box-shadow: inset 0px 0px 19px 0px rgba(255,255,255,0.1);
+  -webkit-box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.7);
+  box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.7);
+  outline: none;
 }

@@ -1,6 +1,15 @@
 {
-    "companyname":"Company Name",
-    "title":"Mountain",
-    "price":"50'000'000",
-    "description":"The pretties mountain in the world, Yeah, this is just making the text extra long for testing purposes!"
+    "companyname":"Blue Monster",
+    "title":"Coookies",
+    "price":"100",
+    "description":"Cookies baked by professional rally driver. Don't beieve it? ",
+    "image":"https://images.unsplash.com/photo-1464195244916-405fa0a82545?ixlib=rb-0.3.5&s=42a50a7c1273c4ffc34834774f0e524a&auto=format&fit=crop&w=1049&q=80",
+
+    "buttonHoverColor":"#ccfff1",
+    "buttonActiveColor":"#c0ede1",
+    "backgroundColor":"#7D99FF",
+    "PrimaryColor":"#72C8E8",
+    "SecondaryColor":"#ccfff1",
+    "textDarkColor":"#6b6b6b",
+    "textBrightColor":"#FFF"
 }
