@@ -1,35 +1,155 @@
-#companyName {
-    text-align: top left;
+body {
+  background-color: #268ED2;
+}
+
+#companyNameBox {
+      top: 0;
+      bottom: 0;
+      padding: auto;
+      overflow: hidden;
+      border: none;
+      font: normal 12px/2 Arial Black, Gadget, sans-serif;
+      color: rgba(255,255,255,1);
+      text-indent: 2em;
+      -o-text-overflow: clip;
+      text-overflow: clip;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+    }
+
+#imageBox {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px auto 0px;
+    overflow: hidden;
+    width: 700px;
+    height: auto;
+    border: none;
 }
 
 #productImage {
+  -webkit-border-radius: 5px 5px 5px 0px;
+  border-radius: 5px 5px 5px 0px;
+     border-bottom-width: 3px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     height: 300px;
     width: 700px;
-    margin-top: 20px;
 }
 
 #productTitle {
-    margin-top: 20px; 
-    text-align: left;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
 }
 
-#productPrice  {
-    text-align: left;
-    margin-top: 20px; 
+#descBox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: -20px 0px 10px;
+  overflow: hidden;
+  width: 350px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #21a7ff;
+
 }
 
 #productDesc {
-    height: 50px;
-    width: 200px;
-    margin-top: 20px; 
+    height: auto;
+    text-align: left;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    word-spacing: 2px;
+    color: #FFF;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#descTextBox {
+  height: auto;
+  width: 100%;
+  background: #FAF;
+}
+
+#priceBox {
+  display: block;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px 0px auto auto;
+  overflow: hidden;
+  width: 175px;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #21a7ff;
+}
+
+#productPrice  {
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  word-spacing: 2px;
+  color: #FFF;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
 }
 
 #buyButton {
-    margin-top: 20px;
-    margin-left: 0px;
-    height: 20px;
-    width: 40px;
-} 
+  display: block;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px 0px auto auto;
+  overflow: hidden;
+  border: 0px;
+  height: 50px;
+  width: 175px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 19px;
+  -webkit-border-radius: 5px 0px 5px 0px;
+  border-radius: 5px 0px 5px 0px;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #21a7ff;
+  -webkit-box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.1);
+  transition-duration: 0.3s;
+}
+
+#buyButton:hover {
+  background: #1399f2;
+  font-size: 21px;
+  transition-duration: 0.3s;
+  -webkit-box-shadow: inset 0px 0px 19px 0px rgba(255,255,255,0.1);
+  box-shadow: inset 0px 0px 19px 0px rgba(255,255,255,0.1);
+}
+
+#buyButton:active {
+  background: #0e83d1;
+  font-size: 17px;
+  transition-duration: 0.1s;
+  -webkit-box-shadow: inset 0px 0px 19px 0px rgba(255,255,255,0.1);
+  box-shadow: inset 0px 0px 19px 0px rgba(255,255,255,0.1);
+}
