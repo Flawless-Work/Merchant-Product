@@ -37,12 +37,12 @@ body {
      border-bottom-width: 3px;
     display: block;
     object-fit: cover;
-    height: 300px;
+    height: 400px;
     width: 700px;
 }
 
 #productTitle {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 20px;
@@ -52,11 +52,11 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: -20px 0px 10px;
+  margin: 0px 0px 0px;
   overflow: hidden;
   width: 350px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
   color: {textBrightColor};
   text-align: center;
   -o-text-overflow: ellipsis;
