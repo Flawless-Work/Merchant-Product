@@ -44,7 +44,7 @@ box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.7);
   box-sizing: content-box;
   padding: 10px 20px;
   border: 1px;
-  border-bottom: 1px solid {PrimaryColor};
+  border-bottom: 1px solid {SecondaryColor};
   width: 355px;
   height: 45px;
   -webkit-border-radius: 5px 5px 0px 0px;
@@ -54,7 +54,7 @@ box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.7);
   color: {textDarkColor};
   -o-text-overflow: clip;
   text-overflow: clip;
-  background: {SecondaryColor};
+  background: {PrimaryColor};
   outline: none;
 
 }
@@ -73,7 +73,7 @@ box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.7);
     color: {textDarkColor};
     -o-text-overflow: clip;
     text-overflow: clip;
-    background: {SecondaryColor};
+    background: {PrimaryColor};
     outline: none;
 }
 
@@ -84,7 +84,7 @@ box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.7);
     box-sizing: content-box;
     padding: 10px 20px;
     border: 1px;
-    border-top: 1px solid {PrimaryColor};
+    border-top: 1px solid {SecondaryColor};
     width: 355px;
     height: 45px;
     -webkit-border-radius: 0px 0px 5px 5px;
@@ -94,7 +94,7 @@ box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.7);
     color: {textDarkColor};
     -o-text-overflow: clip;
     text-overflow: clip;
-    background: {SecondaryColor};
+    background: {PrimaryColor};
     outline: none;
 }
 
@@ -109,7 +109,7 @@ box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.7);
     height: 65px;
     -webkit-border-radius: 0px 0px 5px 5px;
     border-radius: 0px 0px 5px 5px;
-    background: {PrimaryColor};
+    background: {SecondaryColor};
     border: 0;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 19px;
