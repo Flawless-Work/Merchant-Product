@@ -1,0 +1,67 @@
+<html>
+<head>
+     <p>Please enter your personal details below!</p>
+    <script type="text/javascript">
+
+  function checkForm(form) {
+      
+      var errors=[];   
+    
+    if (form.FirstName.value == "") {
+        errors.push("First Name tab is empty!");
+    }
+    
+    if (form.lastName.value == "") {
+        errors.push("Last Name tab is empty!");
+    }
+          
+    if (form.address.value == "") {
+        errors.push("Address tab is empty!");
+    }
+    var re = /^[\w ]+$/;
+    
+    if (!re.test(form.FirstName.value)) {
+        errors.push("First Name tab contains invalid characters!");
+    }
+      var re = /^[\w ]+$/;
+    
+    if (!re.test(form.lastName.value)) {
+        errors.push("Last Name tab contains invalid characters!");
+    }
+    if(form.FirstName.value == form.lastName.value) {
+        errors.push("Names are identical!");
+    }  
+      
+      function ValidateEmail(address) 
+{
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.address.value))
+  {
+    return (true)
+  }
+    errors.push("You have entered an invalid email address!")
+}
+      if (errors.length > 0) {
+          var msg = "ERRORS:\n\n";
+          for (var i=0; i<errors.length; i++){
+    
+              msg+=errors[i] + "\n";          
+           }
+          alert(msg);
+          return false;
+      }
+        
+        return true;
+}
+</script>
+    </head>    
+<body>
+    
+    <form method="post" action="page3.html" onsubmit="return checkForm(this);">
+    <input name="FirstName" type="text" placeholder="First Name"><br>
+    <input name="lastName" type="text" placeholder="Last Name"><br>
+    <input name="address" type="text" placeholder="Address"><br>
+    <input type="submit" value="continue">
+    </form>
+    
+</body>
+</html>
