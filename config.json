@@ -5,7 +5,7 @@
     "description":"Dirtbike with great performance and only used few times. (The driver is not included)",
     "image":"https://images.unsplash.com/photo-1496705048923-c5a338800024?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=abac4a98ce583e5309082a20de46f51e&auto=format&fit=crop&w=1058&q=80",
 
-    "buttonHoverColor":"#ffC",
+    "buttonHoverColor":"#ff6",
     "buttonActiveColor":"#a57109",
     "backgroundColor":"#F2F3FF",
     "PrimaryColor":"#7ab3e8",
