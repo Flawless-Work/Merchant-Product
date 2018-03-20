@@ -18,6 +18,7 @@ function onRequest(req, response) {
     var urlParts = url.parse(req.url, true),
     urlParams = urlParts.query,
     urlPathname = urlParts.pathname;
+    
     console.log(urlPathname);
     console.log(urlParams);
     if (urlPathname === '/') {
