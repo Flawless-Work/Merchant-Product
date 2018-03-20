@@ -1,14 +1,13 @@
 var http = require('http');
 var url = require('url');
 var fs = require('fs');
-var format = require("string-template");
-var configRead
+var templater = require('./templater');
 var port = process.env.PORT || 5000;
 
 // Format using an object hash with keys matching [0-9a-zA-Z]+
-var content = fs.readFileSync('config.json', 'utf8');
-var contentString = content.toString();
-var configurationObj = JSON.parse(contentString);
+var configContent = fs.readFileSync('config.json', 'utf8');
+
+console.log(configContent)
 
 function onRequest(req, response) {
     if (req.url == '/favicon.ico') {
@@ -26,19 +25,12 @@ function onRequest(req, response) {
     }
     response.writeHead(200, {'Content-Type': 'text/html'});
 
-
-    fs.readFile(__dirname + urlPathname, function(err, data) {
-        if (err){
-             console.log(err);
-         }
-
-        configRead = format(data.toString(),
-                            Object.assign({}, configurationObj, urlParams));
-
-        response.write(configRead);
-        response.end();
-    })
+    templater(configContent, urlPathname, urlParams, function(configRead) {
+      response.write(configRead);
+      response.end();
+    });
 }
+
 
 
 
