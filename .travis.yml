@@ -9,3 +9,6 @@ install:
 
 script:
   - npm run test
+
+notifications:
+    slack: muertos:aFsNBHYzcXGV7E8WYmLx4Jgq
