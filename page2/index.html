@@ -1,6 +1,75 @@
 <html>
 <link rel="stylesheet" type ="text/css" href="style.css">
 <header>
+<script type="text/javascript">
+
+function checkFirstNameIsFine (firstName){
+    var alphaExp = /^(^[A-Z])([a-z-]){1,30}$/;
+
+    if (firstName.match(alphaExp)){
+        return true;
+
+    } else {
+        return false;
+    }
+}
+
+function checkLastNameisFine (lastname){
+    var alphaexp = /^(^[A-Z])([a-z-]){1,30}$/;
+
+    if (lastname.match(alphaexp)){
+        return true;
+
+    } else {
+        return false;
+    }
+}
+
+function ValidateEmail(address) {
+    var mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+    if (address.match(mail)){
+    return true;
+    } else {
+        return false;
+    }
+}
+    errors.push("You have entered an invalid email address!")
+
+
+function checkForm(form) {
+
+    var errors=[];
+
+    if (!ValidateEmail(form.address.value)){
+        errors.push("You have entered an invalid email address!");
+        }
+
+    if (form.FirstName.value == form.LastName.value){
+        errors.push("First name and Last name are matching! If the error still occurs please contact us at mayday@comp.com!");
+    }
+
+    if (!checkFirstNameIsFine(form.FirstName.value)) {
+        errors.push("First name contains invalid input!");
+    }
+
+    if (!checkLastNameisFine(form.LastName.value)) {
+        errors.push("Last name contains invalid input!");
+    }
+
+    if (errors.length > 0) {
+        var msg = "ERRORS:\n\n";
+        for (var i=0; i<errors.length; i++){
+
+        msg+=errors[i] + "\n";
+        }
+        alert(msg);
+        return false;
+    }
+
+    return true;
+}
+</script>
 <title>{companyname}</title>
     </header>
 <body>
@@ -8,10 +77,10 @@
     <h2 id="companyName">{companyname}</h2>
   </div>
     <div id="formBox">
-        <form action="/page3/index.html" method="GET">
-            <input id="inputFirstName" name="firstName" type="text" placeholder="First Name"><br>
-            <input id="inputLastName" name="lastName" type="text" placeholder="Last Name"><br>
-            <input id="inputAdress" name="address" type="text" placeholder="Email"><br>
+        <form action="/page3/index.html" method="GET" onsubmit="return checkForm(this);">
+            <input id="inputFirstName" name="FirstName" type="text" placeholder="First Name"><br>
+            <input id="inputLastName" name="LastName" type="text" placeholder="Last Name"><br>
+            <input id="inputAddress" name="address" type="text" placeholder="Email"><br>
             <input id="continueButton" type="submit" value="Continue">
         </form>
     </div>
