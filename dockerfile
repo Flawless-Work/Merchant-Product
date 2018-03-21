@@ -10,5 +10,4 @@ COPY . .
 
 EXPOSE 8080
 
-//yes
 CMD [ "npm", "start" ]
