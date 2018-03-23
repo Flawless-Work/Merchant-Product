@@ -2,8 +2,6 @@ body {
   background-color: {backgroundColor};
 }
 
-
-
 #companyNameBox {
       top: 0;
       bottom: 0;
@@ -19,26 +17,34 @@ body {
       text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
     }
 
-#imageBox {
-    position: relative;
+.row {
+  width: 1020px;
+  height: auto;
+  margin: 10px auto 10px;
+  background: red;
+}
+
+.productBox {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 0px auto 0px;
+    margin: 10px 20px 10px;
     overflow: hidden;
-    width: 700px;
+    width: 300px;
     height: auto;
     border: none;
+    display: inline-block;
+    float: left;
 }
 
 #productImage {
-  -webkit-border-radius: 5px 5px 5px 0px;
-  border-radius: 5px 5px 5px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
      border-bottom-width: 3px;
     display: block;
     object-fit: cover;
-    height: 400px;
-    width: 700px;
+    height: 300px;
+    width: 300px;
 }
 
 #productTitle {
@@ -54,7 +60,7 @@ body {
   box-sizing: border-box;
   margin: 0px 0px 0px;
   overflow: hidden;
-  width: 350px;
+  width: 300px;
   -webkit-border-radius: 0px 0px 5px 5px;
   border-radius: 0px 0px 5px 5px;
   color: {textBrightColor};
@@ -96,7 +102,7 @@ body {
   box-sizing: border-box;
   margin: 0px 0px auto auto;
   overflow: hidden;
-  width: 175px;
+  width: 150px;
   text-align: center;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
@@ -128,7 +134,7 @@ body {
   overflow: hidden;
   border: 0px;
   height: 50px;
-  width: 175px;
+  width: 150px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 19px;
   -webkit-border-radius: 5px 0px 5px 0px;

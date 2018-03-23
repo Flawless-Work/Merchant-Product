@@ -5,6 +5,17 @@
     "description":"Dirtbike with great performance and only used few times. (The driver is not included)",
     "image":"https://images.unsplash.com/photo-1496705048923-c5a338800024?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=abac4a98ce583e5309082a20de46f51e&auto=format&fit=crop&w=1058&q=80",
 
+    "title2":"Red Dirtbike",
+    "price2":"24'350",
+    "description2":"Dirtbike with great performance and only used few times. (The driver is not included) I know, it's the same description",
+    "image2":"https://images.unsplash.com/photo-1515540468442-bcec79e94728?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=388682ecba7d880db1c2883b6e8906e0&auto=format&fit=crop&w=1127&q=80",
+
+    "title3":"Black/White Goggles",
+    "price3":"2'449",
+    "description3":"Cool looking motocross goggles. (The driver is not included)",
+    "image3":"https://images.unsplash.com/photo-1515355499716-f40ba148a83c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a7839131072e33ea3936d9b9d66d1281&auto=format&fit=crop&w=1050&q=80",
+
+
     "buttonHoverColor":"#ff6",
     "buttonActiveColor":"#a57109",
     "backgroundColor":"#F2F3FF",
